@@ -4,8 +4,8 @@
   "description": "Este repositorio alojará la api rest que se usará en el dojo el día miércoles 10 de Octubre",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server/index.js ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js "
   },
   "repository": {
     "type": "git",
