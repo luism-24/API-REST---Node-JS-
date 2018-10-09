@@ -3,12 +3,7 @@ const router = express.Router();
 
 const employeeCtrl = require('../controllers/employee.controller');
 router.get('/', (req, res) => {
-    res.send(
-        '<html> '+
-        '<a href="/api/employees" style="text-align:center">Ver empleados</a>'+
-        '</html>'
-    );
-
+    res.redirect('/api/employees');
 });
 router.get('/api/employees', employeeCtrl.getEmployees);
 router.post('/api/employees', employeeCtrl.createEmployee);
