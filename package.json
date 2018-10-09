@@ -1,0 +1,29 @@
+{
+  "name": "API-REST---Node-JS-",
+  "version": "1.0.0",
+  "description": "Este repositorio alojará la api rest que se usará en el dojo el día miércoles 10 de Octubre",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luism-24/API-REST---Node-JS-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luism-24/API-REST---Node-JS-/issues"
+  },
+  "homepage": "https://github.com/luism-24/API-REST---Node-JS-#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.3.2",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
