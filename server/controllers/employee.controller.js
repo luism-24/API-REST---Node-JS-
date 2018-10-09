@@ -33,8 +33,10 @@ employeeCtrl.editEmployee = async(req, res) => {
     res.json({status: 'Employee Updated'}); 
 }
 
-employeeCtrl.deleteEmployee = function(){
+employeeCtrl.deleteEmployee = async (req, res) => {
+   await Employee.findByIdAndRemove(req.params.id);
 
+   res.json({status: 'Employee Deleted'});      
 }
 
 module.exports = employeeCtrl; 
